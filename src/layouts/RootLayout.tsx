@@ -1,14 +1,16 @@
-import { Outlet } from "react-router-dom"
+import { Outlet } from "react-router-dom";
+import Navbar from "../components/Navbar";
+
 
 const RootLayout = () => {
   return (
     <div>
-        <div className="container">
-            <Outlet />
-        </div>
+        <Navbar/>
+      <div className="container">
+        <Outlet />
+      </div>
     </div>
-    
-  )
-}
+  );
+};
 
-export default RootLayout
+export default RootLayout;
